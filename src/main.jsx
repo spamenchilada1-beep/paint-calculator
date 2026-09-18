@@ -51,9 +51,9 @@ function App() {
         <p className="assumption">Paint coverage varies by product, surface, color, texture, and application method. Use the coverage printed on your paint can when available.</p>
       </section>
       <section className="affiliate-card" aria-label="Recommended paint project supplies">
-        <p className="affiliate-label">PROJECT SUPPLIES</p>
-        <h2>Need supplies for your paint project?</h2>
-        <p>Browse paint, rollers, brushes, drop cloths, tape, and other project supplies on Amazon.</p>
+        <p className="affiliate-label">PAINTING SUPPLIES</p>
+        <h2>Ready to paint? Get the rest of the kit.</h2>
+        <p>Use your paint estimate, then compare paint and application supplies on Amazon.</p>
         <div className="affiliate-links">
           <a href="https://www.amazon.com/s?k=interior+wall+paint&tag=athena-20" target="_blank" rel="sponsored noopener">Shop interior paint <span>(paid link)</span></a>
           <a href="https://www.amazon.com/s?k=paint+rollers+brushes+drop+cloths&tag=athena-20" target="_blank" rel="sponsored noopener">Shop painting tools &amp; supplies <span>(paid link)</span></a>
