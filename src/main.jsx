@@ -55,8 +55,8 @@ function App() {
         <h2>Ready to paint? Get the rest of the kit.</h2>
         <p>Use your paint estimate, then compare paint and application supplies on Amazon.</p>
         <div className="affiliate-links">
-          <a href="https://www.amazon.com/s?k=interior+wall+paint&tag=athena-20" target="_blank" rel="sponsored noopener">Shop interior paint <span>(paid link)</span></a>
-          <a href="https://www.amazon.com/s?k=paint+rollers+brushes+drop+cloths&tag=athena-20" target="_blank" rel="sponsored noopener">Shop painting tools &amp; supplies <span>(paid link)</span></a>
+          <a href="https://www.amazon.com/s?k=interior+wall+paint&tag=athena-20" target="_blank" rel="sponsored noopener">Compare interior wall paint <span>(paid link)</span></a>
+          <a href="https://www.amazon.com/s?k=paint+rollers+brushes+drop+cloths&tag=athena-20" target="_blank" rel="sponsored noopener">Shop paint rollers, brushes &amp; drop cloths <span>(paid link)</span></a>
         </div>
       </section>
       <article className="content">
