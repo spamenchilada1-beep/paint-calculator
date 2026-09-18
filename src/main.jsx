@@ -66,6 +66,10 @@ function App() {
         <section><h2>Why order extra paint?</h2><p>A 10% planning allowance is included in the recommended order. Extra paint can help with touch-ups and normal application variation, but your actual needs depend on the surface and product.</p></section>
         <section><h2>FAQ</h2><details><summary>What coverage should I use?</summary><p>Use the coverage printed on your paint can. A common planning range is roughly 350–400 square feet per gallon, but products vary.</p></details><details><summary>Does this account for doors and windows?</summary><p>Yes. The calculator uses approximate areas of 21 square feet per door and 15 square feet per window.</p></details><details><summary>Does this calculate primer too?</summary><p>No. This calculator estimates paint quantity. If you need primer, calculate it separately based on the primer's coverage and the surface being primed.</p></details></section>
       </article>
+      <nav aria-label="More ATHENA Calculators">
+        <p><strong>More ATHENA Calculators:</strong> <a href="https://flooring-calculator.pages.dev/">Flooring Calculator</a> · <a href="https://contractor-pricing-calculator.pages.dev/">Contractor Pricing Calculator</a> · <a href="https://concrete-calculator-cic.pages.dev/">Concrete Calculator</a></p>
+      </nav>
+
       <footer><span>Free paint calculator for practical project planning.</span>{' '}<span>As an Amazon Associate I earn from qualifying purchases.</span>{' '}<a href="/privacy.html">Privacy Policy</a></footer>
     </main>
   )
