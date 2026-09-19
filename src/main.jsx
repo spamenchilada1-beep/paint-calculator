@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { calculatePaint, createCopyText, formatNumber, DEFAULT_COVERAGE } from './calculator'
 import './styles.css'
@@ -11,6 +11,14 @@ function App() {
   const [copyStatus, setCopyStatus] = useState(null)
   const result = useMemo(() => calculatePaint(form), [form])
   const validResult = started && result.errors.length === 0
+  const completionTracked = useRef(false)
+
+  useEffect(() => {
+    if (validResult && !completionTracked.current) {
+      completionTracked.current = true
+      window.gtag?.('event', 'calculator_completed', { calculator: 'paint' })
+    }
+  }, [validResult])
   const update = (field, value) => { setStarted(true); setCopyStatus(null); setForm(current => ({ ...current, [field]: value })) }
   const onSubmit = event => event.preventDefault()
   const copy = async () => {
@@ -18,7 +26,7 @@ function App() {
     try { await navigator.clipboard.writeText(createCopyText({ result, coats: form.coats, coverage: form.coverage })); setCopyStatus('success') }
     catch { setCopyStatus('error') }
   }
-  const reset = () => { setForm(initialForm); setStarted(false); setCopyStatus(null) }
+  const reset = () => { setForm(initialForm); setStarted(false); setCopyStatus(null); completionTracked.current = false }
 
   return (
     <main className="site-shell">
