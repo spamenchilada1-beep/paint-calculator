@@ -63,8 +63,8 @@ function App() {
         <h2>Ready to paint? Get the rest of the kit.</h2>
         <p>Use your paint estimate, then compare paint and application supplies on Amazon.</p>
         <div className="affiliate-links">
-          <a href="https://www.amazon.com/s?k=interior+wall+paint&tag=athena-paint-20" target="_blank" rel="sponsored noopener">Compare interior wall paint <span>(paid link)</span></a>
-          <a href="https://www.amazon.com/s?k=paint+rollers+brushes+drop+cloths&tag=athena-paint-20" target="_blank" rel="sponsored noopener">Shop paint rollers, brushes &amp; drop cloths <span>(paid link)</span></a>
+          <a href="https://www.amazon.com/s?k=interior+wall+paint&tag=athena-paint-20" target="_blank" rel="sponsored noopener" onClick={() => window.gtag?.('event', 'affiliate_click', { program: 'amazon_associates', calculator: 'paint', placement: 'interior_wall_paint' })}>Compare interior wall paint <span>(paid link)</span></a>
+          <a href="https://www.amazon.com/s?k=paint+rollers+brushes+drop+cloths&tag=athena-paint-20" target="_blank" rel="sponsored noopener" onClick={() => window.gtag?.('event', 'affiliate_click', { program: 'amazon_associates', calculator: 'paint', placement: 'rollers_brushes_drop_cloths' })}>Shop paint rollers, brushes &amp; drop cloths <span>(paid link)</span></a>
         </div>
       </section>
       <article className="content">
