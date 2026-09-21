@@ -1,0 +1,36 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "src/**"
+      - "public/**"
+      - "package.json"
+      - "sitemap.xml"
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow of updated pages
+        env:
+          INDEXNOW_KEY: f6b8cad2e456789abcdef012345678901
+        run: |
+          sleep 60
+          urls=(
+            "https://paint-calculator-5wq.pages.dev/"
+            "https://paint-calculator-5wq.pages.dev/how-much-paint-do-i-need"
+            "https://paint-calculator-5wq.pages.dev/paint-coverage-guide"
+            "https://paint-calculator-5wq.pages.dev/paint-coverage-calculator"
+            "https://paint-calculator-5wq.pages.dev/paint-1000-square-feet"
+          )
+          for url in "${urls[@]}"; do
+            code=$(curl -sS -G -o /dev/null -w "%{http_code}" \
+              "https://api.indexnow.org/indexnow" \
+              --data-urlencode "url=$url" \
+              --data-urlencode "key=$INDEXNOW_KEY")
+            echo "$code $url"
+          done
