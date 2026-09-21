@@ -78,7 +78,7 @@ function App() {
         <section><h2>More paint planning help</h2><p>See the step-by-step guide: <a href="/how-much-paint-do-i-need">How Much Paint Do I Need?</a></p><p>Need help choosing the right coverage input? Read the <a href="/paint-coverage-guide">paint coverage per gallon guide</a>.</p><p>Want a quick coverage-based estimate? Use the <a href="/paint-coverage-calculator">paint coverage calculator</a>.</p></section>
       </article>
       <nav aria-label="More ATHENA Calculators">
-        <p><strong>More ATHENA Calculators:</strong> <a href="https://athena-public-platform.pages.dev/#tools">ATHENA Tools</a> · <a href="https://flooring-calculator.pages.dev/">Flooring Calculator</a> · <a href="https://contractor-pricing-calculator.pages.dev/">Contractor Pricing Calculator</a> · <a href="https://concrete-calculator-cic.pages.dev/">Concrete Calculator</a></p>
+        <p><strong>More ATHENA Calculators:</strong> <a href="https://athena-public-platform.pages.dev/tools/">ATHENA Tools</a> · <a href="https://flooring-calculator.pages.dev/">Flooring Calculator</a> · <a href="https://contractor-pricing-calculator.pages.dev/">Contractor Pricing Calculator</a> · <a href="https://concrete-calculator-cic.pages.dev/">Concrete Calculator</a></p>
       </nav>
 
       <footer><span>Free paint calculator for practical project planning.</span>{' '}<span>As an Amazon Associate I earn from qualifying purchases.</span>{' '}<a href="/privacy.html">Privacy Policy</a></footer>
